@@ -23,8 +23,12 @@
 <br/>
 <section>
 	<ul class="list-group">
-		<li ng-repeat="todo in $ctrl.todoArr" class="list-group-item">
-			<span ng-class="{todo_done: todo.done}">
+		<li ng-repeat="todo in $ctrl.todoArr | orderBy: 'priority'" class="list-group-item">
+			<span
+					ng-class="{
+						todo_done: todo.done,
+						highPriority: (todo.priority < 2)
+					}">
 				{{ todo.title }}
 			</span>
 			<button
