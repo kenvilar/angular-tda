@@ -2,7 +2,8 @@
 <form action="" class="form">
 	<div class="form-group">
 		<label for="todo"></label>
-		<input ng-model="$ctrl.newTodo.title" type="text" class="form-control" id="todo" placeholder="Add your todo here...">
+		<input ng-model="$ctrl.newTodo.title" type="text" class="form-control" id="todo"
+		       placeholder="Add your todo here...">
 		<p class="help-block">Enter a todo then click add.</p>
 	</div>
 	<div class="form-group">
@@ -13,5 +14,15 @@
 			<option>3</option>
 		</select>
 	</div>
-	<button ng-click="$ctrl.addTodo()" type="button" class="btn btn-default">ADD TODO</button>
+	<button
+			ng-click="$ctrl.addTodo()"
+			type="button"
+			class="btn btn-default">ADD TODO
+	</button>
 </form>
+<br/>
+<section>
+	<ul class="list-group">
+		<li ng-repeat="todo in $ctrl.todoArr" class="list-group-item">{{ todo.title }}</li>
+	</ul>
+</section>

@@ -7,9 +7,13 @@
 		controller: function() {
 			const self = this;
 
+			self.$onInit = () => {
+				self.todoArr = [];
+			};
+
 			self.addTodo = () => {
-				let newTodo = [];
-				newTodo.push(self.newTodo);
+				self.todoArr.push(self.newTodo);
+				console.log(self.todoArr);
 			}
 		},
 		templateUrl: '/app/templates/tda.html',
