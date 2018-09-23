@@ -32,6 +32,12 @@
 				{{ todo.title }}
 			</span>
 			<button
+					ng-click="$ctrl.deleteTodo(todo)"
+					type="button"
+					class="btn btn-danger pull-right">
+				DELETE
+			</button>&nbsp;&nbsp;
+			<button
 					ng-click="$ctrl.markDone(todo)"
 					type="button"
 					class="btn btn-success pull-right">

@@ -27,7 +27,12 @@
 
 			self.markDone = (todo) => {
 				todo.done = true;
-			}
+			};
+
+			self.deleteTodo = (todo) => {
+				const index = self.todoArr.indexOf(todo);
+				self.todoArr.splice(index, 1);
+			};
 		},
 		templateUrl: '/app/templates/tda.html',
 	});
