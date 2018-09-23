@@ -12,16 +12,17 @@
 			};
 
 			self.addTodo = () => {
-				self.todoArr.push({
-					title: self.newTodo.title,
-					priority: self.newTodo.priority,
-				});
-				console.log(self.todoArr);
+				if (self.newTodo && self.newTodo.title && self.newTodo.priority) {
+					self.todoArr.push({
+						title: self.newTodo.title,
+						priority: self.newTodo.priority,
+					});
 
-				self.newTodo = {
-					title: '',
-					priority: '',
-				};
+					self.newTodo = {
+						title: '',
+						priority: '',
+					};
+				}
 			};
 		},
 		templateUrl: '/app/templates/tda.html',
