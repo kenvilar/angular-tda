@@ -23,13 +23,14 @@
 <br/>
 <section>
 	<ul class="list-group">
-		<li ng-repeat="todo in $ctrl.todoArr | orderBy: 'priority'" class="list-group-item">
+		<li ng-repeat="todo in $ctrl.todoArr | orderBy: 'title'" class="list-group-item">
 			<span
 					ng-class="{
 						todo_done: todo.done,
 						highPriority: (todo.priority < 2)
 					}">
 				{{ todo.title }}
+				<span class="badge">{{ todo.priority }}</span>
 			</span>
 			<button
 					ng-click="$ctrl.deleteTodo($index)"
