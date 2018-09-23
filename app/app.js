@@ -29,8 +29,8 @@
 				todo.done = true;
 			};
 
-			self.deleteTodo = (todo) => {
-				const index = self.todoArr.indexOf(todo);
+			self.deleteTodo = (index) => {
+				//const index = self.todoArr.indexOf(todo);
 				self.todoArr.splice(index, 1);
 			};
 		},
