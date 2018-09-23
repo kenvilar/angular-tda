@@ -1,0 +1,22 @@
+{
+  "name": "angular-tda",
+  "version": "1.0.0",
+  "description": "Angular App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenvilar/angular-tda.git"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Ken Vilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenvilar/angular-tda/issues"
+  },
+  "homepage": "https://github.com/kenvilar/angular-tda#readme"
+}
