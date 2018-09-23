@@ -23,6 +23,16 @@
 <br/>
 <section>
 	<ul class="list-group">
-		<li ng-repeat="todo in $ctrl.todoArr" class="list-group-item">{{ todo.title }}</li>
+		<li ng-repeat="todo in $ctrl.todoArr" class="list-group-item">
+			<span ng-class="{todo_done: todo.done}">
+				{{ todo.title }}
+			</span>
+			<button
+					ng-click="$ctrl.markDone(todo)"
+					type="button"
+					class="btn btn-success pull-right">
+				DONE
+			</button>
+		</li>
 	</ul>
 </section>

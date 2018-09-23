@@ -24,6 +24,10 @@
 					};
 				}
 			};
+
+			self.markDone = (todo) => {
+				todo.done = true;
+			}
 		},
 		templateUrl: '/app/templates/tda.html',
 	});
