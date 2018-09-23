@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/kenvilar/angular-tda/issues"
   },
-  "homepage": "https://github.com/kenvilar/angular-tda#readme"
+  "homepage": "https://github.com/kenvilar/angular-tda#readme",
+  "dependencies": {
+    "angular": "^1.7.2"
+  }
 }
