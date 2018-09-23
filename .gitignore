@@ -2,6 +2,7 @@
 .idea
 
 ### Node template
+package-lock.json
 # Logs
 logs
 *.log
