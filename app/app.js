@@ -5,7 +5,12 @@
 
 	tda.component('tda', {
 		controller: function() {
-			console.log('This is TDA');
+			const self = this;
+
+			self.addTodo = () => {
+				let newTodo = [];
+				newTodo.push(self.newTodo);
+			}
 		},
 		templateUrl: '/app/templates/tda.html',
 	});

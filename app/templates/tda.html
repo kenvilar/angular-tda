@@ -2,8 +2,16 @@
 <form action="" class="form">
 	<div class="form-group">
 		<label for="todo"></label>
-		<input type="text" class="form-control" id="todo" placeholder="Add your todo here...">
+		<input ng-model="$ctrl.newTodo.title" type="text" class="form-control" id="todo" placeholder="Add your todo here...">
 		<p class="help-block">Enter a todo then click add.</p>
 	</div>
-	<button type="submit" class="btn btn-default">ADD TODO</button>
+	<div class="form-group">
+		<label for="priority">Priority</label>
+		<select ng-model="$ctrl.newTodo.priority" class="form-control" id="priority">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+	</div>
+	<button ng-click="$ctrl.addTodo()" type="button" class="btn btn-default">ADD TODO</button>
 </form>
